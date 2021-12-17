@@ -154,7 +154,7 @@ elif sidebar == 'Country with Most/Least/None Yearly Production':
 		st.metric(label='Least Production', value=negara['name'])
 		st.write('Code: ' , negara['alpha-3'])
 		st.write('Sub-Region: ', negara['sub-region'])
-		st.write('Production: ',df[(df.kode_negara == kode_negara_terbesar) & (df.tahun == tahun4)].produksi.values[0])
+		st.write('Production: ',df[(df.kode_negara == kode_negara_terkecil) & (df.tahun == tahun4)].produksi.values[0])
 	    
 	# yg 0
 	st.write('**0 Production**')
